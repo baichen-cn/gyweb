@@ -1,0 +1,48 @@
+@charset "utf-8";
+/***********************设置来校路线***************************/
+.map{
+    width: 100%;
+    background: url("../images/map.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -2;
+}
+/*设置来校路线具体位置，背景三角形*/
+.map .way{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: -1;
+}
+.map .schoolo-way{
+    color: white;
+    padding-top: 20px;
+    line-height: 45px;
+}
+.map .schoolo-way .school{
+    margin-left: 40px;
+    font-size: 40px;
+}
+.map .schoolo-way ul li{
+    font-size: 16px;
+    list-style-image: url("../images/pointer.png");
+    margin-left: 40px;
+    margin-bottom: 5px;
+    width: 510px;
+    line-height: 40px;
+}
+.map .schoolo-way .cir{
+    display: inline-block;
+    border: 1px solid white;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+.school-local{
+    width: 880px;
+    margin: 0 auto;
+    padding: 80px 0 200px;
+    line-height: 50px;
+}

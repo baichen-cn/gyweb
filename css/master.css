@@ -1,0 +1,629 @@
+@charset "utf-8";
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}/* 页面内部宽度 公共类 */
+.pos-r{
+    position: relative;
+    z-index: 2;
+}
+.fs{
+    font-size: 26px;
+}/*定义公共字体大小*/
+.mar-t{
+    margin-top: 60px;
+}
+.mar-b{
+   margin-bottom: 60px;
+}/*定义公共类  修饰 上下间距 */
+#top{
+    position: relative;
+    background: #ffffff;
+}
+.logo{
+    margin-top: 5px;
+}
+#navWrap{
+    background: #ffffff;
+}
+.nav{
+    height: 120px;
+}
+.nav ul{
+    float: right;/*800 + 384 = 1184*/
+}
+.nav ul li{
+    float: left;
+    width: 90px;
+    height: 120px;
+    line-height: 120px;
+    position: relative;
+}
+.nav ul li span{
+    position: absolute;
+    z-index: 1;
+    top:0;
+    left: 0;
+    width: 90px;
+    height: 120px;
+    background: #ffffff;
+    transform: skew(-45deg);
+    transition: all .6s;
+}
+.nav ul li:hover span{
+    background: #1d64a0;
+    transition: all .6s;
+}
+.nav ul li.active span{
+    background: #1d64a0;
+}/*活动类 li */
+.nav ul li.active a{
+    color: #ffffff;
+}
+.nav ul li a{
+    color: #484848;
+    display: block;
+    text-align: center;
+    position: relative;
+    z-index: 99;
+    transition: all .6s;
+}
+.nav ul li:hover a{
+    color: #ffffff;
+    transition: all .6s;
+}
+/************************以上是导航区域********************************/
+#banner{
+    position: relative;
+}
+.carousel{
+
+}
+.mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.morea{
+    position: absolute;
+    border: 1px solid white;
+    padding: 10px 30px;
+    bottom:220px;
+    left: 18%;
+    color: white;
+}
+.morea:hover{
+    /*border: 1px solid #1d64a0;*/
+    background: #1d64a0;
+}
+/*以上 是banner 区域*/
+.enter{
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 600px);
+}
+.enter .slideBox{
+    height: 60px;
+    width: 75%;
+    overflow: hidden;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    /*报名滚动信息文字*/
+}
+.slideBox li:nth-child(even){
+    color: #ffc947;
+}
+.slideBox li:nth-child(odd){
+    color: #1e64a0;
+}
+.slideBox li span{
+    display: inline-block;
+    line-height:60px;
+    padding: 0 70px;
+}
+/*以上是 最新报名动态*/
+/********************************   top   ******************************/
+.need-wrap,.question-wrap{
+    background: url("../images/triangle_up1.png") no-repeat left top;
+}
+.bgdown{
+    padding-bottom: 90px;
+    background: url("../images/triangle_down1.png") no-repeat right bottom;
+}
+.center{
+    width: 790px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+.need-wrap h3,.need-wrap h4{
+    text-align: center;
+    margin: 60px 0;
+    font-size: 48px;
+}
+.need-wrap h4{
+    font-weight: normal;
+}
+.need-wrap p{
+    font-size: 26px;
+    line-height:2;
+}
+.need-wrap p.one{
+    text-indent:2em;
+}
+.need-wrap img{
+    margin: 50px auto;
+    display: block;
+}
+/******************************* need 第二屏  ******************************/
+.professional-intro{
+    background: #dbdbdb;
+    padding: 60px 0 90px 0;
+}
+.title{
+    background: url("../images/tit_ico.png") no-repeat left center;
+    line-height: 60px;
+    padding-left: 60px;
+    margin-bottom: 50px;
+    font-size: 30px;
+}/*标题公共类*/
+.no{
+    background-image: none;
+}
+.title-center{
+    width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.title_white{
+    background-image: url("../images/tit_ico_white.png");
+    color: #ffffff;
+}
+.more{
+    display: block;
+    background: #de5f0a;
+    width: 200px;
+    line-height: 46px;
+    text-align: center;
+    color: #ffffff;
+    margin: 50px auto 0;
+    font-size: 16px!important;
+}/* 咨询更多类*/
+.more:hover{
+    background: #e9b41c;
+}
+.more-inline{
+    display: inline-block;
+}
+.btn-gray{
+    background-color: #707070;
+    margin-left: 680px;
+    margin-right: 30px;
+}
+.pos-a{
+    position: absolute;
+    right: 80px;
+    bottom: 0;
+}
+.tabbox{
+    background: #ffffff;
+    padding: 10px 40px 40px 0;
+    position: relative;
+}
+.tabbox .hd{
+    width: 450px;
+    height: 232px;/*580px*/
+    background: url("../images/tiaobg.png") no-repeat;
+    margin-left: -32px;
+}
+.tabbox .hd li{
+    line-height: 84px;
+    font-size: 24px;
+    color: #ffffff;
+    background: url("../images/arrowbg.jpg") no-repeat right center;
+    margin-top: 32px;
+    text-align: center;
+    cursor: pointer;
+    width: 326px;
+    transition: all .6s;
+}
+.tabbox .hd li:hover{
+    width: 100%;
+    transition: all .6s;
+}
+.tabbox .hd li.active{
+    width: 100%;
+}
+.tabbox .hd li.bg1{
+    background-color: #248aab;
+    background-position-y: -32px;
+}
+.tabbox .hd li.bg2{
+    background-color: #589b34;
+    background-position-y: -148px;
+}
+.tabbox .hd li.bg3{
+    background-color: #f18c1d;
+    background-position-y: -265px;
+}
+.tabbox .hd li.bg4{
+    background-color: #da4e29;
+    background-position-y: -380px;
+}
+.tabbox .hd li.bg5{
+    background-color: #4d4d4d;
+    background-position-y: -495px;
+}
+.tabbox .bd{
+    width: 720px;
+}
+.tabbox .bd>div{
+    display: none;
+    /*transition:all 1s;
+    -webkit-transition:all 1s;*/
+}
+.tabbox .bd>div p{
+    padding: 30px 0 0;
+    margin-bottom: 185px;
+    line-height: 46px;
+    font-size: 20px;
+}
+.pos{
+    position: absolute;
+    left: 40%;
+    top:30%;
+}
+.pos2{
+    position: absolute;
+    left: 60%;
+    top:30%;
+}
+/**************************** 以上是 professional-intro 第三屏 *************************/
+.question-wrap{
+    padding-top: 100px;
+}
+.question-item{
+    width: 960px;
+    margin: 160px auto 50px;
+}
+.question-item li{
+    float: left;
+    width: 260px;
+    height: 180px;
+    padding: 20px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    background: #dbdbdb;
+}
+.question-item li.active{
+    background: #248aab;
+}
+.question-item li.active i{
+    background-position-y: -183px;
+}
+.question-item li.active a{
+    color: #ffffff;
+}
+.question-item li.nomar{
+    margin-right: 0;
+}
+.question-item li a{
+    display: block;
+    color: #248aab;
+}
+.question-item li i{
+    display: block;
+    width: 92px;
+    height: 85px;
+    margin: 20px 0;
+    background: url("../images/sprites1.png") no-repeat;
+}
+.question-item li i.sp1{
+    background-position: -3px -12px;
+}
+.question-item li i.sp2{
+    background-position: -150px -12px;
+}
+.question-item li i.sp3{
+    background-position: -295px -12px;
+}
+.question-item li i.sp4{
+    background-position: -442px -12px;
+}
+.question-item li i.sp5{
+    background-position: -590px -12px;
+}
+.question-item li i.sp6{
+    background-position: -736px -12px;
+}
+.question-item li:hover{
+    background: #248aab;
+}
+.question-item li:hover a{
+    color: #ffffff;
+}
+.question-item li:hover i{
+    background-position-y: -183px;
+}
+.question-item li p{
+    line-height: 50px;
+}
+/****************************** question 关心问题 第四屏**************************/
+.safeguard-wrap{
+    background: #dbdbdb;
+    padding: 100px 0;
+}
+.safeguard{
+    text-align: center;
+}
+.safeguard img{
+    margin: 0 auto;
+}
+.safe-list{
+    margin: 90px 0 50px;
+}
+.safe-list li{
+    float: left;
+    position: relative;
+    margin-right: 4px;
+    width: 166px;
+    height: 482px;
+    cursor: pointer;
+    background: #ffffff url(../images/sevenico.png) no-repeat left top;
+    transition: all .8s;
+}
+.safe-list li:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 6px 8px rgba(100,100,100,.3);
+    transition: all .8s;
+}
+.safe-list li.bgpos1{
+    background-position-x: 0;
+}
+.safe-list li.bgpos2{
+    background-position-x: -170px;
+}
+.safe-list li.bgpos3{
+    background-position-x: -340px;
+}
+.safe-list li.bgpos4{
+    background-position-x: -510px;
+}
+.safe-list li.bgpos5{
+    background-position-x: -680px;
+}
+.safe-list li.bgpos6{
+    background-position-x: -850px;
+}
+.safe-list li.bgpos7{
+    background-position-x: -1020px;
+}
+.safe-list li p{
+    position: absolute;
+    top: 380px;
+    width: 100%;
+    text-align: center;
+}
+/*********  7 重保障 **********/
+.poster-main{position: relative;width: 1100px;height: 366px;margin: 50px auto;}
+.poster-main a,.poster-main img{display:block;}
+.poster-main .poster-list{width: 1100px;height: 366px}
+.poster-main .poster-list .poster-item{position: absolute;left: 0px;top: 0px}
+.poster-main .poster-btn{position: absolute;height: 100%;width:100px;top: 0px;z-index: 10;cursor: pointer;}
+.poster-main .poster-prev-btn{ left: 0px; background: url("../images/btn_l.png") no-repeat center center;}
+.poster-main .poster-next-btn{right: 0px;background: url("../images/btn_r.png") no-repeat center center;}
+/*********  就业协议轮播图 ********/
+.picture{
+    background: #ffffff;
+    width: 1150px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 60px;
+}
+.tab-pic{
+    width: 1196px;
+    height: 104px;
+    background: url("../images/school-pic-bg.png") no-repeat left top;
+    position: absolute;
+    left: -30px;
+    z-index: 0;
+}
+.pic-box{
+    width: 1110px;/*1150 - 40 = 1110*/
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    top: 54px;
+}
+.pic-box .hd li{
+    float: left;
+    width: 160px;
+    height: 50px;
+    color: #ffffff;
+    position: relative;
+}
+.pic-box .hd li span{
+    display: block;
+    height: 50px;
+    width: 100%;
+    transform: skew(-45deg);
+}
+.pic-box .hd li.active span{
+    background: #de5f0a;
+}
+.pic-box .hd li:hover span{
+    background: #de5f0a;
+}
+.pic-box .hd li a{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #ffffff;
+}
+.pic-box  .moreb{
+    color: #ffffff;
+    margin-left: 500px;
+}
+.pic-box .bd{
+    position: relative;
+    top: 10px;
+    height: 280px;
+}
+.picMarquee-left{ width:1100px; overflow:hidden; display: none; }
+.picMarquee-left .dd{
+    width: 600%;
+}
+.picMarquee-left .dd ul{ overflow:hidden; zoom:1; }
+.picMarquee-left .dd ul li{width:360px; height:240px; position:relative; margin-right:10px; float:left; display:inline; overflow:hidden; text-align:center;  }
+.picMarquee-left .dd ul li .pic{ text-align:center; }
+.picMarquee-left .dd ul li .txt{ position:absolute; bottom:-36px;line-height:36px; width:100%;font-size: 20px;background: rgba(0,0,0,.5);transition: all .6s;}
+.picMarquee-left .dd ul li a{
+    color: #ffffff;
+}
+.picMarquee-left .dd ul li:hover .txt{
+    bottom: 0;
+    transition: all .6s;
+}
+.picMarquee-left .dd ul li .txtstar{
+    height: calc(100% - 30px);
+    padding-top: 60px;
+    bottom: -270px;
+    transition: all .6s;
+}
+/**************  学校图集****************/
+/******************************     safeguard 7重保障 第五屏 *******************/
+.news-wrap{
+    padding: 60px 0 220px;
+}
+.news{
+    width: 520px;
+    background: #dbdbdb;
+ }
+.news .bg,.sign .bg{
+    background: url("../images/newsbg.png") no-repeat;
+    width: 581px;
+    height: 80px;
+    margin-left: -32px;
+}
+.news .content,.sign .content{
+    margin-top: -50px;
+}
+.news .content h4,.sign .content h4{
+    line-height: 50px;
+    width: 90%;
+    margin: 0 auto;
+    color: #ffffff;
+}
+.news .content h4 a,.sign .content h4 a{
+    float: right;
+    color: #ffffff;
+}
+.news .content ul{
+    padding: 20px;
+}
+.news .content ul li{
+    line-height: 40px;
+    margin-bottom: 5px;
+    position: relative;
+}
+.news .content ul li a{
+    width: 360px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    color: #444444;
+}
+.news .content ul li:hover a{
+    color: #1d64a0;
+}
+.news .content ul li span{
+    position: absolute;
+    right: 0;
+    top:0;
+}
+/*****************************news 新闻资讯  *******************************/
+.sign-up-wrap{
+    background: #dbdbdb;
+    padding: 60px 0 260px;
+    position: relative;
+}
+.triangle_down1_bg{
+    background: url("../images/triangle_down1(big).png") no-repeat right bottom;
+    height:890px;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.sign{
+    width: 520px;
+    background: #ffffff;
+}
+.txtScroll-top{ width:520px;  overflow:hidden; position:relative;  }
+.txtScroll-top .bd{ padding:15px;  }
+.txtScroll-top .infoList li{ height:36px; line-height:36px;   }
+.txtScroll-top .infoList li span{width:100px;text-align: center;display: inline-block;margin-right: 20px;}
+.form{
+    width: 460px;
+    margin-right: 50px;
+}
+.form p{
+    margin-bottom: 30px;
+}
+.form input{
+    line-height: 46px;
+    height: 46px;
+    width: 350px;
+    padding: 0 10px;
+}
+.form input.btn{
+    width: 200px;
+    margin-top: 0;
+    margin-right: 120px;
+    display: block;
+    cursor: pointer;
+}
+/****************************sign-up 预约报名 **************************/
+#footer{
+    background: #313131;
+    padding: 30px 0;
+}
+.foot-left{
+    width: 830px;
+}
+.foot-left p{
+    line-height: 50px;
+    color: #ffffff;
+}
+.foot-left p a{
+    color: #ffffff;
+    margin-right: 20px;
+}
+.foot-left p a:hover{
+    text-decoration: underline;
+}
+/******************** footer 版权 *********************/
+#gotop{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    background: #e05f0b;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    z-index: 99;
+}
+#gotop:hover{
+    background: #e9b41c;
+ }

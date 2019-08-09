@@ -1,0 +1,73 @@
+@charset "utf-8";
+/***************************设置新闻内容***************************/
+.newslist{
+    padding: 60px 0;
+}
+.newslist ul li {
+    float:left;
+    width:100px;
+    line-height:36px;
+    text-align:center;
+    background-color:#fff;
+    border-bottom:none;
+    cursor: pointer;
+}
+.newslist ul li.fli {
+    background-color: #e05f0b;
+    color: white;
+}
+.newslist .news-top a{
+    line-height: 36px;
+    color: #333333;
+}
+.newslist ul{
+    overflow:hidden;
+    zoom:1;
+    list-style-type:none;
+}
+.newslist #tab_con {
+    width:1200px;
+    height:200px;
+    margin-top: 60px;
+}
+.newslist #tab_con div {
+    width:1200px;
+    height:200px;
+    display:none;
+    border-top:none;
+}
+.newslist #tab_con div.fdiv {
+    display:block;
+}
+/*设置新闻内容样式*/
+.newslist #tab_con h1{
+    text-align:center;
+}
+.newslist #tab_con .fdiv .common{
+    text-indent: 50px;
+}
+.newslist #tab_con .time{
+    width: 500px;
+    margin: 20px auto;
+    padding-bottom: 20px;
+}
+.newslist #tab_con .time span{
+    display: inline-block;
+}
+/*设置图片居中*/
+.newslist #tab_con .news-image{
+    display: block;
+    margin:  0 auto;
+}
+/*设置上一篇，下一篇*/
+.newslist #tab_con .time1{
+    width: 1200px;
+    margin-top: 50px;
+}
+/***********************************8预留广告设置************************/
+.advertising{
+    width:100%;
+    height: 300px;
+    background-color: tan;
+    padding-bottom: 200px;
+}

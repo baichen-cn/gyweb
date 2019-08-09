@@ -1,0 +1,124 @@
+@charset "utf-8";
+.triangle_down1_bg2{
+    background: url("../images/triangle_down1(big).png") no-repeat right bottom;
+    height:890px;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+ul,li,div {
+    padding:0;
+    margin:0;
+}
+.newslist{
+    padding: 60px 0 200px;
+}
+.main-left{
+    width: 275px;
+    float: left;
+    position: relative;
+}
+#tab  li {
+    float:left;
+    width:275px;
+    line-height:90px;
+    text-align:center;
+    background-color:#fff;
+    border-bottom:none;
+    font-size: 24px;
+    cursor: pointer;
+}
+#tab li.fli {
+    background: url("../images/dynamic.png") no-repeat;
+    color:white;
+}
+#tab {
+    overflow:hidden;
+    zoom:1;
+    margin-top: 150px;
+}
+#tab_con {
+    width:925px;
+    float: left;
+}
+#tab_con .tabbox {
+    width:920px;
+    display:none;
+}
+#tab_con .fdiv {
+    display:block;
+}
+/*右侧新闻页面*/
+/*右侧学校动态信息*/
+#tab_con  ul li{
+    margin-bottom: 10px;
+}
+#tab_con .student-news{
+    font-size: 36px;
+    width:925px;
+    border-bottom: 1px solid black;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+#tab_con ul{
+    margin-top: 20px;
+}
+/*新闻分界线*/
+#tab_con .circle{
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    margin-top: -3px;
+}
+#tab_con ul li img{
+    float: left;
+}
+#tab_con .content{
+   float: left;
+    width: 670px;
+    margin: -8px 0px 0px 10px;
+}
+#tab_con .fdiv .title1{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+#tab_con .title1 a{
+    color: #484848;
+}
+#tab_con .title1 a:hover{
+    text-decoration: underline;
+}
+#tab_con .stu-content{
+    height: 120px;
+    overflow: hidden;
+}
+#tab_con .tabbox .time{
+    float: right;
+    margin-top: 10px;
+}
+/*********************************设置分页********************************/
+.page{
+    width:550px;
+    height: 35px;
+    margin: 50px auto;
+}
+ .page a{
+    display: inline-block;
+    width: 40px;
+    line-height: 35px;
+    margin-left: 10px;
+    text-align: center;
+    font-size: 18px;
+     color: #333;
+}
+ .page .one{
+    background-color: #de5f0a;
+}
+.page a.pageprev{
+    width: 56px;
+}

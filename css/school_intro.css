@@ -1,0 +1,100 @@
+@charset "utf-8";
+.school-intro-one{
+
+}
+.intro-word{
+    width: 50%;
+    background: #248aab;
+    color: white;
+}
+.intro-word p{
+    text-indent: 2em;
+    line-height: 32px;
+    padding: 0 50px;
+}
+/*********************** 学校简介 *****************/
+.recommend{
+    background: url("../images/school-line-bg.png") repeat-y center;
+    height: 580px;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    padding: 60px 0;
+}
+.tab-rec{
+    width: 1060px;
+    margin: 0 auto;
+}
+.tab-rec .hd{
+    width: 50%;
+}
+.tab-rec .hd li{
+    line-height: 90px;
+    padding-left: 100px;
+    cursor: pointer;
+    background: url("../images/li-bg.png") no-repeat 20px -81px;
+    color: #ffffff;
+}
+.tab-rec .hd li:hover{
+    background-color: #ffffff;
+    background-position-y: 21px;
+    color: #de5f0a;
+}
+.tab-rec .hd li.active{
+    background-color: #ffffff;
+    background-position-y: 21px;
+    color: #de5f0a;
+}
+.tab-rec .bd{
+    width: 50%;
+}
+.tab-rec .bd div{
+    display: none;
+    padding-left: 50px;
+}
+/****************************** recommend 专业推荐 *********************************/
+.school-honor{
+    background: #dbdbdb;
+    padding: 60px 0;
+}
+.school-honor img{
+    display: block;
+    margin: 0 auto;
+}
+/*****************  school-honor 学校荣誉 *********************/
+.school-environment{
+    background: #ffffff;
+    padding: 60px 0 120px;
+    font-size: 0;
+}
+.school-environment a{
+    font-size: 16px;
+    margin-bottom: 40px;
+    display: inline-block;
+    height: 460px;
+    width: 690px;
+    color: #ffffff;
+    overflow: hidden;
+    position: relative;
+}
+.school-environment a.small{
+    width: 474px;
+}
+.school-environment a.mr{
+    margin-right: 36px;
+}
+.school-environment a p{
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    bottom: -60px;
+    background: rgba(0,0,0,.5);
+    text-align: center;
+    -webkit-transition: all .6s;
+    transition: all .6s;
+}
+.school-environment a:hover p{
+    bottom: 0;
+    -webkit-transition: all .6s;
+    transition: all .6s;
+}
+/********************* school-environment 学校环境 ***************/
